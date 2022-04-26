@@ -1,7 +1,18 @@
-.site-page-header-ghost-wrapper{
-    padding: 2px;
-    color: blue;
+.Navbar {
+  display: flex;
+  background-color: aqua;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
-.site-page-header-responsive{
-    
+.category {
+  display: inline-flex;
+}
+.sub-category {
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  color: cadetblue;
 }

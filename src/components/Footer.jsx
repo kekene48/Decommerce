@@ -1,4 +1,4 @@
-import { Space } from 'antd';
+
 import React from 'react'
 
 const Footers = () => {
