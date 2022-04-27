@@ -11,7 +11,7 @@ const App = () => (
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="product" element={<Product />} />
-    <Route path="categories" element={<Categories />} />
+    <Route path="/category/:product" element={<Categories />} />
   </Routes>
 );
 export default App;

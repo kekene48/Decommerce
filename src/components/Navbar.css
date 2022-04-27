@@ -16,3 +16,10 @@
   cursor: pointer;
   color: cadetblue;
 }
+.links {
+  padding-left: 20px;
+  color: gray;
+  border: 20px;
+
+}
+
