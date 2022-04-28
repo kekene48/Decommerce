@@ -8,7 +8,7 @@ export const ApiCode = ({ children }) => {
   const [Category, setCategory] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [Products, setProducts] = useState();
-  
+   const [productid, setProductid] = useState();
 
   useEffect(() => {
     getCategory();
@@ -34,9 +34,17 @@ export const ApiCode = ({ children }) => {
     console.log(data);
     setProducts(data);
   };
+  const productData = async (id) => {
+    const response = await fetch(
+      `https://fakestoreapi.com/products/${id}`
+    );
+    const data = await response.json();
+    console.log(data);
+    setProductid(data);
+  };
 
   return (
-    <ApiContext.Provider value={{ Category, getCategory, Products, getProducts }}>
+    <ApiContext.Provider value={{ Category, getCategory, Products, getProducts, productData, productid }}>
       {children}
     </ApiContext.Provider>
   );

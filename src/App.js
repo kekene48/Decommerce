@@ -10,7 +10,7 @@ import Product from './components/Product';
 const App = () => (
   <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="product" element={<Product />} />
+    <Route path="/category/product/:id" element={<Product />} />
     <Route path="/category/:product" element={<Categories />} />
   </Routes>
 );
